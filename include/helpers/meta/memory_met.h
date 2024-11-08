@@ -31,20 +31,20 @@ inline void _set_mem_meta_size(Memory* mem_m_obj, size_t size){
     mem_m_obj->__meta_size = size;
 }
 
-inline size_t _get_mem_size(Memory* mem_m_obj){
+inline size_t _get_mem_size(const Memory* mem_m_obj){
     return mem_m_obj->__size;
 }
-inline size_t _get_mem_used(Memory* mem_m_obj){
+inline size_t _get_mem_used(const Memory* mem_m_obj){
     return mem_m_obj->__used;
 }
-inline size_t _get_mem_meta_size(Memory* mem_m_obj){
+inline size_t _get_mem_meta_size(const Memory* mem_m_obj){
     return mem_m_obj->__meta_size;
 }
 
-inline uintptr_t _get_mem_next_addr(Memory* mem_m_obj){
+inline uintptr_t _get_mem_next_addr(const Memory* mem_m_obj){
     return mem_m_obj->__next_addr;
 }
-inline void* _get_mem_pool(Memory* mem_m_obj){
+inline void* _get_mem_pool(const Memory* mem_m_obj){
     return mem_m_obj->__pool;
 }
 
