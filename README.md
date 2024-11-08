@@ -13,7 +13,7 @@
 
 ![](https://img.shields.io/badge/memory-defragmentation-8A2BE2)
 
-An efficient allocator designed for large objects, optimized for O(1) allocation and deallocation, with no fragmentation issues.
+An efficient allocator designed for large objects, with amortized O(1) allocation and O(1) deallocation complexity , with no fragmentation issues.
 
 ## About project
 
