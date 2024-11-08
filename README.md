@@ -13,13 +13,14 @@
 
 ![](https://img.shields.io/badge/memory-defragmentation-8A2BE2)
 
-An efficient allocator optimized for large objects, offering O(1) amortized allocation and O(1) deallocation, with no fragmentation issues.
+An efficient memory allocator designed for large objects, offering O(1) amortized allocation and deallocation, free from fragmentation issues, and incorporating optional conservative garbage collection for enhanced memory management.
 
 ## About project
 
 This is my first project in C as a beginner. There are many concepts and materials that I still don’t fully understand, but I am doing my best. I am studying computer science for about 8 to 9 months, In the meanwhile i have realized that system programming is incredibly exciting, which motivated me to focus my efforts on it. For my first tool, I chose C because it is special; it provides a great deal of control over hardware.
 A few days ago, I started learning C. Prior to this, I was working on a compiler for my programming language in Lisp. I found that memory management in C is more challenging than I initially thought. After further study, I learned about a concept called "fragmentation." When using malloc and free repeatedly, fragmentation can occur, leading to inefficiencies.
 To address this issue, I decided to create a memory management system similar to malloc and free that minimizes memory fragmentation. This system can effectively handle large objects since the metadata for each object on a 64bit System is approximately 40 bytes. However, for embedded systems, this approach may not be efficient enough since most embedded systems have very limited memory, often under 1 MB, a metadata size of 40 bytes per object is inefficient, or it's not? You know better than me :) , so I plan to develop another project specifically tailored for those systems soon. For now, my solution can be used on general-purpose computers without any problems. 
+The algorithm uses on-demand defragmentation with a first-fit allocation strategy. You can set GC to work with defragmentation process. 
  
 ## Usage 
 
