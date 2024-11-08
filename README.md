@@ -13,6 +13,7 @@
 
 ![](https://img.shields.io/badge/memory-defragmentation-8A2BE2)
 
+** The project currently under development and should not be used yet **
 An efficient memory allocator designed for large objects, offering O(1) amortized allocation and deallocation, free from fragmentation issues, and incorporating optional conservative garbage collection for enhanced memory management.
 
 ## About project
