@@ -89,5 +89,5 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+![MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
