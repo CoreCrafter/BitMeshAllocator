@@ -46,7 +46,11 @@ char* my_string;
 ```C
 allocate_memory((void**)&my_string, sizeof(char) * 5);
 ```
+<<<<<<< HEAD
 This allocates 5 bytes for my_string, enough to store a 4-character string + null, similar to using malloc.
+=======
+This allocates 5 bytes for my_string, enough to store a 4-character string + null , similar to using malloc.
+>>>>>>> df92d9d3ea3be43f4634abeb9dcf7be08b0a0e26
 
 - To deallocate memory for a specific variable
 
